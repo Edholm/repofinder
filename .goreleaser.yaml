@@ -3,8 +3,8 @@ before:
     # You may remove this if you don't use go modules.
     - go mod tidy
 builds:
-  - main: ./cmd/repofinder
-  - env:
+  - main: ./cmd/repofinder/repofinder.go
+    env:
       - CGO_ENABLED=0
     goos:
       - linux
